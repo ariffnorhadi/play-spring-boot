@@ -12,5 +12,9 @@
 	</label>
 	<button class="btn btn-outline-info" type="submit">+</button>
 </form>
+
+<div style="background-color: aqua;margin: 10px" th:each="todo,state:${todoList}">
+	<p th:text="${todo.text}"></p>
+</div>
 </body>
 </html>
