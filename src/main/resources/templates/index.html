@@ -6,5 +6,11 @@
 </head>
 <body>
 <h1>This is index.html</h1>
+<form action="#" method="post" th:action="@{/createTodo}" th:object="${newTodo}">
+	<label>Create todo
+		<textarea class="form-control text-dark" required th:field="*{text}"></textarea>
+	</label>
+	<button class="btn btn-outline-info" type="submit">+</button>
+</form>
 </body>
 </html>
